@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ThreeWolvesMedia</title>
+    <meta name="keywords" content="fotó fotózás fotós fotósok fotográfus fotográfusok fotográfia fényképész fényképészek képalkotó képalkotás művész művészet alkotó alkotás kreatív_alkotó megörökítés esküvõ esküvõi_fotózás párfotózás jegyespárfotózás legénybúcsú_fotózás leánybúcsú_fotózás lánybúcsú_fotózás családfotózás babafotózás gyerekfotózás gyermekfotózás kismamafotózás portréfotózás portfóliófotózás divatfotózás reklámfotózás céges_rendezvények_fotózása konferenciafotózás koncertfotózás fesztiválfotózás sportfotó sportfotózás sportesemények_fotózása sportesemények_megörökítése termékfotózás stúdió stúdiófotózás partnertalálkozó_fotózása galéria két_fotós Magyarország magyar_fotós Dunakanyar_fotós Dunakanyar_fotózás ajándékfotózás">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.threewolvesmedia.com/" />
+    <meta property="og:title" content="ThreeWolvesMedia" />
+    <meta property="og:image" content="http://www.threewolvesmedia.com/img/icons/logoHover.png" />
+    <link rel="icon" type="image/x-icon" href="img/icons/twmLogo.png">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href="galleries.css" type="text/css" rel="stylesheet">
+    <script src="scripts/navbarFunctions.js"></script>
+    <script src="scripts/galleryController.js"></script>
+    <script src="scripts/scrollTo.js"></script>
+</head>
+
+<body class="main">
+    <div class="data-prot-navbar">
+        <div class="navbar-icons">
+            <img src="img/icons/logo.png" class="navbar-logo">
+            <a class="navbar-menu" onclick="showMenu()">&#9776;</a>
+        </div>
+        <a class="navbar-button" href="index.html#introduction" onclick="closeMenu()">
+            <span class="navbar-text">Bemutatkozás</span>
+        </a>
+        <a class="navbar-button" href="index.html#workflow" onclick="closeMenu()">
+            <span class="navbar-text">Munkafolyamat</span>
+        </a>
+        <a class="navbar-button" href="index.html#reviews" onclick="closeMenu()">
+            <span class="navbar-text">Rólunk mondták</span>
+        </a>
+        <a class="navbar-button" href="index.html#wedding-section" onclick="closeMenu()">
+            <span class="navbar-text">Esküvő</span>
+        </a>
+        <a class="navbar-button" href="index.html#family-and-couple" onclick="closeMenu()">
+            <span class="navbar-text">Család- és párfotózás</span>
+        </a>
+        <a class="navbar-button" href="index.html#fashion-and-portrait" onclick="closeMenu()">
+            <span class="navbar-text">Divat és portréfotózás</span>
+        </a>
+        <a class="navbar-button" href="index.html#company-event" onclick="closeMenu()">
+            <span class="navbar-text">Rendezvényfotózás</span>
+        </a>
+        <a class="navbar-button" href="index.html#for-companies" onclick="closeMenu()">
+            <span class="navbar-text">Cégek részére</span>
+        </a>
+        <a class="navbar-button" href="index.html#contacts" onclick="closeMenu()">
+            <span class="navbar-text">Kapcsolat</span>
+        </a>
+
+    </div>
+
+
+    <section class="gallery-slider-container">
+        <div class="main-image-container">
+            <div class="control" onclick="previousImage()" on-touch="previousImage()">&#8249;</div>
+            <img src="img/galleries/eskuvo/012.jpg" class="main-image" id="main-image">
+
+            <div class="control" onclick="nextImage()" on-touch="nextImage()">&#8250;</div>
+        </div>
+        <div class="sub-images">
+            <center>
+                <img src="img/galleries/eskuvo/1.jpg" class="sub-image" id="first">
+                <img src="img/galleries/eskuvo/10.jpg" class="sub-image" id="second">
+                <img src="img/galleries/eskuvo/11.jpg" class="sub-image" id="third">
+                <img src="img/galleries/eskuvo/12.jpg" class="sub-image" id="fourth">
+
+
+            </center>
+
+        </div>
+    </section>
+
+    <section class="gallery-images-container">
+        <div class="container-header">
+            <img src="img/icons/wolfMainHeadLogo.png" class="logo">
+            <span class="header-title">További képeink</span>
+            <img src="img/icons/wolfMainHeadLogo.png" class="logo">
+        </div>
+        <div class="thumbnail-container">
+            <center>
+                <img src="img/galleries/eskuvo/012.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(0)">
+                <img src="img/galleries/eskuvo/1.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(1)">
+                <img src="img/galleries/eskuvo/10.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(2)">
+                <img src="img/galleries/eskuvo/11.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(3)">
+                <img src="img/galleries/eskuvo/12.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(4)">
+                <img src="img/galleries/eskuvo/13.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(5)">
+                <img src="img/galleries/eskuvo/14.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(6)">
+                <img src="img/galleries/eskuvo/15.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(7)">
+                <img src="img/galleries/eskuvo/16.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(8)">
+                <img src="img/galleries/eskuvo/17.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(9)">
+                <img src="img/galleries/eskuvo/18.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(10)">
+                <img src="img/galleries/eskuvo/19.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(11)">
+                <img src="img/galleries/eskuvo/2.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(12)">
+                <img src="img/galleries/eskuvo/20.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(13)">
+                <img src="img/galleries/eskuvo/21.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(14)">
+                <img src="img/galleries/eskuvo/22.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(15)">
+                <img src="img/galleries/eskuvo/23.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(16)">
+                <img src="img/galleries/eskuvo/24.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(17)">
+                <img src="img/galleries/eskuvo/25.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(18)">
+                <img src="img/galleries/eskuvo/26.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(19)">
+                <img src="img/galleries/eskuvo/27.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(20)">
+                <img src="img/galleries/eskuvo/28.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(21)">
+                <img src="img/galleries/eskuvo/29.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(22)">
+                <img src="img/galleries/eskuvo/3.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(23)">
+                <img src="img/galleries/eskuvo/30.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(24)">
+                <img src="img/galleries/eskuvo/31.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(25)">
+                <img src="img/galleries/eskuvo/32.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(26)">
+                <img src="img/galleries/eskuvo/33.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(27)">
+                <img src="img/galleries/eskuvo/34.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(28)">
+                <img src="img/galleries/eskuvo/35.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(29)">
+                <img src="img/galleries/eskuvo/36.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(30)">
+                <img src="img/galleries/eskuvo/37.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(31)">
+                <img src="img/galleries/eskuvo/38.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(32)">
+                <img src="img/galleries/eskuvo/39.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(33)">
+                <img src="img/galleries/eskuvo/4.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(34)">
+                <img src="img/galleries/eskuvo/40.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(35)">
+                <img src="img/galleries/eskuvo/41.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(36)">
+                <img src="img/galleries/eskuvo/42.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(37)">
+                <img src="img/galleries/eskuvo/43.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(38)">
+                <img src="img/galleries/eskuvo/44.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(39)">
+                <img src="img/galleries/eskuvo/45.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(40)">
+                <img src="img/galleries/eskuvo/46.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(41)">
+                <img src="img/galleries/eskuvo/47.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(42)">
+                <img src="img/galleries/eskuvo/48.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(43)">
+                <img src="img/galleries/eskuvo/49.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(44)">
+                <img src="img/galleries/eskuvo/5.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(45)">
+                <img src="img/galleries/eskuvo/50.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(46)">
+                <img src="img/galleries/eskuvo/51.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(47)">
+                <img src="img/galleries/eskuvo/52.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(48)">
+                <img src="img/galleries/eskuvo/53.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(49)">
+                <img src="img/galleries/eskuvo/54.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(50)">
+                <img src="img/galleries/eskuvo/55.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(51)">
+                <img src="img/galleries/eskuvo/56.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(52)">
+                <img src="img/galleries/eskuvo/57.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(53)">
+                <img src="img/galleries/eskuvo/58.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(54)">
+                <img src="img/galleries/eskuvo/59.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(55)">
+                <img src="img/galleries/eskuvo/6.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(56)">
+                <img src="img/galleries/eskuvo/60.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(57)">
+                <img src="img/galleries/eskuvo/61.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(58)">
+                <img src="img/galleries/eskuvo/62.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(59)">
+                <img src="img/galleries/eskuvo/63.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(60)">
+                <img src="img/galleries/eskuvo/64.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(61)">
+                <img src="img/galleries/eskuvo/65.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(62)">
+                <img src="img/galleries/eskuvo/66.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(63)">
+                <img src="img/galleries/eskuvo/67.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(64)">
+                <img src="img/galleries/eskuvo/68.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(65)">
+                <img src="img/galleries/eskuvo/69.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(66)">
+                <img src="img/galleries/eskuvo/7.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(67)">
+                <img src="img/galleries/eskuvo/70.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(68)">
+                <img src="img/galleries/eskuvo/71.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(69)">
+                <img src="img/galleries/eskuvo/72.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(70)">
+                <img src="img/galleries/eskuvo/73.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(71)">
+                <img src="img/galleries/eskuvo/74.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(72)">
+                <img src="img/galleries/eskuvo/75.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(73)">
+                <img src="img/galleries/eskuvo/76.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(74)">
+                <img src="img/galleries/eskuvo/77.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(75)">
+                <img src="img/galleries/eskuvo/78.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(76)">
+                <img src="img/galleries/eskuvo/79.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(77)">
+                <img src="img/galleries/eskuvo/8.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(78)">
+                <img src="img/galleries/eskuvo/80.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(79)">
+                <img src="img/galleries/eskuvo/81.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(80)">
+                <img src="img/galleries/eskuvo/9.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(81)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_01.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(82)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_02.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(83)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_03.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(84)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_04.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(85)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_05.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(86)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_06.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(87)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_07.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(88)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_08.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(89)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_09.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(90)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_10.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(91)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_11.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(92)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_12.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(93)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_13.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(94)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_14.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(95)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_15.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(96)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_16.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(97)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_17.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(98)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_18.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(99)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_19.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(100)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_20.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(101)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_21.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(102)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_22.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(103)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_23.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(104)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_24.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(105)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_25.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(106)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_26.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(107)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_27.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(108)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_28.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(109)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_29.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(110)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_30.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(111)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_31.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(112)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_32.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(113)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_33.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(114)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_34.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(115)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_35.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(116)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_36.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(117)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_37.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(118)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_38.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(119)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_39.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(120)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_40.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(121)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_41.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(122)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_42.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(123)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_43.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(124)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_44.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(125)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_45.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(126)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_46.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(127)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_47.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(128)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_48.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(129)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_49.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(130)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_50.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(131)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_51.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(132)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_52.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(133)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_53.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(134)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_54.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(135)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_55.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(136)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_56.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(137)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_57.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(138)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_58.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(139)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_59.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(140)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_60.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(141)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_61.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(142)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_62.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(143)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_63.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(144)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_64.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(145)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_65.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(146)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_66.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(147)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_67.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(148)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_68.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(149)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_69.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(150)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_70.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(151)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_71.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(152)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_72.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(153)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_73.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(154)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_74.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(155)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_75.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(156)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_76.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(157)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_77.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(158)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_78.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(159)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_79.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(160)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_80.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(161)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_81.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(162)">
+                <img src="img/galleries/eskuvo/eskuvofotozas_82.jpg" class="thumbnail-img" href="#main-image"  onclick="setImage(163)">
+            </center>
+
+        </div>
+    </section>
+
+    <section class="sitemap" id="contacts">
+        <div class="contact-list">
+            <div class="contacts">
+                <div class="contact-container">
+
+                    <span class="contact-title">Email</span>
+                    <img src="img/icons/mail.png" class="contact-logo">
+                </div>
+                <ul>
+                    <li class="contact-text">info@threewolvesmedia.com</li>
+                </ul>
+                <div class="contact-container">
+
+                    <span class="contact-title">Telefon</span>
+                    <img src="img/icons/phone.png" class="contact-logo">
+                </div>
+                <ul>
+                    <li class="contact-text">Fodor Zoltán: +3630-849-4483</li>
+                    <li class="contact-text">Fodor Kinga: +3630-530-3036</li>
+                </ul>
+                <div class="contact-container">
+                    <span class="contact-title">Kövessen Minket</span>
+                </div>
+                <a href="https://www.facebook.com/threewolvesmedia/">
+                    <img src="img/icons/fb_icon.png" class="social-logo" />
+                </a>
+                <a href="https://www.instagram.com/threewolvesmedia/">
+                    <img src="img/icons/inst_icon.png" class="social-logo" />
+                </a>
+            </div>
+            <div class="contacts">
+                <span class="contact-title">Esküvő</span>
+                <ul>
+                    <li class="contact-text">
+                        <a href="index.html#wedding-section">Csomag Információk</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="jegyes.html">Jegyespárfotózás galéria</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="eskuvo.html">Esküvő galéria</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <span class="contact-title">Család- és párfotózás</span>
+                <ul>
+                    <li class="contact-text">
+                        <a href="index.html#family-and-couple">Csomag Információk</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="csalad.html">Családfotózás galéria</a>
+                    </li>
+                    <!-- <li class="contact-text">
+                            <a href="">Párfotózás galéria</a>
+                        </li> -->
+                    <li class="contact-text">
+                        <a href="portre.html">Portréfotózás galéria</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="baba.html">Baba- és gyermekfotózás galéria</a>
+                    </li>
+                </ul>
+                <span class="contact-title">Divat és portréfotózás</span>
+                <ul>
+                    <li class="contact-text">
+                        <a href="index.html#fashion-and-portrait">Csomag Információk</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="divat.html">Divatfotózás galéria</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="portre.html">Portréfotózás galéria</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <span class="contact-title">Rendezvényfotózás</span>
+                <ul>
+                    <li class="contact-text">
+                        <a href="index.html">Csomag Információk</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="koncert.html">Koncert és fesztiválfotózás galéria</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="sport.html">Sportesemények galéria</a>
+                    </li>
+                </ul>
+                <span class="contact-title">Cégek részére</span>
+                <ul>
+                    <li class="contact-text">
+                        <a href="index.html#for-companies">Csomag Információk</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="termek.html">Termékfotózás galéria</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="reklam.html">Reklámfotózás galéria</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="legal-list">
+            <a class="legal-text" href="adatvedelem.html">
+                <span class="legal">Adatvédelem</span>
+            </a>
+            <a class="legal-text" href="impressum.html">
+                <span class="legal">Impresszum</span>
+            </a>
+        </div>
+    </section>
+    <center>
+        <p class="twm-text">™Three Wolves Media minden jog fentartva</p>
+    </center>
+    <script>initEskuvo()</script>
+</body>
+
+</html>

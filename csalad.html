@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ThreeWolvesMedia</title>
+    <meta name="keywords" content="fotó fotózás fotós fotósok fotográfus fotográfusok fotográfia fényképész fényképészek képalkotó képalkotás művész művészet alkotó alkotás kreatív_alkotó megörökítés esküvõ esküvõi_fotózás párfotózás jegyespárfotózás legénybúcsú_fotózás leánybúcsú_fotózás lánybúcsú_fotózás családfotózás babafotózás gyerekfotózás gyermekfotózás kismamafotózás portréfotózás portfóliófotózás divatfotózás reklámfotózás céges_rendezvények_fotózása konferenciafotózás koncertfotózás fesztiválfotózás sportfotó sportfotózás sportesemények_fotózása sportesemények_megörökítése termékfotózás stúdió stúdiófotózás partnertalálkozó_fotózása galéria két_fotós Magyarország magyar_fotós Dunakanyar_fotós Dunakanyar_fotózás ajándékfotózás">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.threewolvesmedia.com/" />
+    <meta property="og:title" content="ThreeWolvesMedia" />
+    <meta property="og:image" content="http://www.threewolvesmedia.com/img/icons/logoHover.png" />
+    <link rel="icon" type="image/x-icon" href="img/icons/twmLogo.png">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href="galleries.css" type="text/css" rel="stylesheet">
+    <script src="scripts/navbarFunctions.js"></script>
+    <script src="scripts/galleryController.js"></script>
+
+</head>
+
+<body class="main">
+    <div class="data-prot-navbar">
+        <div class="navbar-icons">
+            <img src="img/icons/logo.png" class="navbar-logo">
+            <a class="navbar-menu" onclick="showMenu()">&#9776;</a>
+        </div>
+        <a class="navbar-button" href="index.html#introduction" onclick="closeMenu()">
+            <span class="navbar-text">Bemutatkozás</span>
+        </a>
+        <a class="navbar-button" href="index.html#workflow" onclick="closeMenu()">
+            <span class="navbar-text">Munkafolyamat</span>
+        </a>
+        <a class="navbar-button" href="index.html#reviews" onclick="closeMenu()">
+            <span class="navbar-text">Rólunk mondták</span>
+        </a>
+        <a class="navbar-button" href="index.html#wedding-section" onclick="closeMenu()">
+            <span class="navbar-text">Esküvő</span>
+        </a>
+        <a class="navbar-button" href="index.html#family-and-couple" onclick="closeMenu()">
+            <span class="navbar-text">Család- és párfotózás</span>
+        </a>
+        <a class="navbar-button" href="index.html#fashion-and-portrait" onclick="closeMenu()">
+            <span class="navbar-text">Divat és portréfotózás</span>
+        </a>
+        <a class="navbar-button" href="index.html#company-event" onclick="closeMenu()">
+            <span class="navbar-text">Rendezvényfotózás</span>
+        </a>
+        <a class="navbar-button" href="index.html#for-companies" onclick="closeMenu()">
+            <span class="navbar-text">Cégek részére</span>
+        </a>
+        <a class="navbar-button" href="index.html#contacts" onclick="closeMenu()">
+            <span class="navbar-text">Kapcsolat</span>
+        </a>
+
+    </div>
+
+
+    <section class="gallery-slider-container">
+        <div class="main-image-container">
+            <div class="control" onclick="previousImage()" on-touch="previousImage()">&#8249;</div>
+            <img src="img/galleries/csalad/1.jpg" class="main-image" id="main-image">
+            <div class="control" onclick="nextImage()" on-touch="nextImage()">&#8250;</div>
+        </div>
+        <div class="sub-images">
+            <center>
+                <img src="img/galleries/csalad/2.jpg" class="sub-image" id="first">
+                <img src="img/galleries/csalad/3.jpg" class="sub-image" id="second">
+                <img src="img/galleries/csalad/4.jpg" class="sub-image" id="third">
+                <img src="img/galleries/csalad/5.jpg" class="sub-image" id="fourth">
+            </center>
+
+        </div>
+    </section>
+
+    <section class="gallery-images-container">
+        <div class="container-header">
+            <img src="img/icons/wolfMainHeadLogo.png" class="logo">
+            <span class="header-title">További képeink</span>
+            <img src="img/icons/wolfMainHeadLogo.png" class="logo">
+        </div>
+        <div class="thumbnail-container">
+            <center>
+                <img src="img/galleries/csalad/1.jpg" class="thumbnail-img" onclick="setImage(0)">
+                <img src="img/galleries/csalad/2.jpg" class="thumbnail-img" onclick="setImage(1)">
+                <img src="img/galleries/csalad/3.jpg" class="thumbnail-img" onclick="setImage(2)">
+                <img src="img/galleries/csalad/4.jpg" class="thumbnail-img" onclick="setImage(3)">
+                <img src="img/galleries/csalad/5.jpg" class="thumbnail-img" onclick="setImage(4)">
+                <img src="img/galleries/csalad/6.jpg" class="thumbnail-img" onclick="setImage(5)">
+                <img src="img/galleries/csalad/csaladfotozas_01.jpg" class="thumbnail-img" onclick="setImage(6)">
+                <img src="img/galleries/csalad/csaladfotozas_02.jpg" class="thumbnail-img" onclick="setImage(7)">
+                <img src="img/galleries/csalad/csaladfotozas_03.jpg" class="thumbnail-img" onclick="setImage(8)">
+                <img src="img/galleries/csalad/csaladfotozas_04.jpg" class="thumbnail-img" onclick="setImage(9)">
+                <img src="img/galleries/csalad/csaladfotozas_05.jpg" class="thumbnail-img" onclick="setImage(10)">
+                <img src="img/galleries/csalad/csaladfotozas_06.jpg" class="thumbnail-img" onclick="setImage(11)">
+                <img src="img/galleries/csalad/csaladfotozas_07.jpg" class="thumbnail-img" onclick="setImage(12)">
+                <img src="img/galleries/csalad/csaladfotozas_08.jpg" class="thumbnail-img" onclick="setImage(13)">
+                <img src="img/galleries/csalad/csaladfotozas_09.jpg" class="thumbnail-img" onclick="setImage(14)">
+                <img src="img/galleries/csalad/csaladfotozas_10.jpg" class="thumbnail-img" onclick="setImage(15)">
+                <img src="img/galleries/csalad/csaladfotozas_11.jpg" class="thumbnail-img" onclick="setImage(16)">
+                <img src="img/galleries/csalad/csaladfotozas_12.jpg" class="thumbnail-img" onclick="setImage(17)">
+                <img src="img/galleries/csalad/csaladfotozas_13.jpg" class="thumbnail-img" onclick="setImage(18)">
+                <img src="img/galleries/csalad/csaladfotozas_14.jpg" class="thumbnail-img" onclick="setImage(19)">
+                <img src="img/galleries/csalad/csaladfotozas_15.jpg" class="thumbnail-img" onclick="setImage(20)">
+                <img src="img/galleries/csalad/csaladfotozas_16.jpg" class="thumbnail-img" onclick="setImage(21)">
+                <img src="img/galleries/csalad/csaladfotozas_17.jpg" class="thumbnail-img" onclick="setImage(22)">
+
+
+            </center>
+
+        </div>
+    </section>
+
+    <section class="sitemap" id="contacts">
+        <div class="contact-list">
+            <div class="contacts">
+                <div class="contact-container">
+
+                    <span class="contact-title">Email</span>
+                    <img src="img/icons/mail.png" class="contact-logo">
+                </div>
+                <ul>
+                    <li class="contact-text">info@threewolvesmedia.com</li>
+                </ul>
+                <div class="contact-container">
+
+                    <span class="contact-title">Telefon</span>
+                    <img src="img/icons/phone.png" class="contact-logo">
+                </div>
+                <ul>
+                    <li class="contact-text">Fodor Zoltán: +3630-849-4483</li>
+                    <li class="contact-text">Fodor Kinga: +3630-530-3036</li>
+                </ul>
+                <div class="contact-container">
+                    <span class="contact-title">Kövessen Minket</span>
+                </div>
+                <a href="https://www.facebook.com/threewolvesmedia/">
+                    <img src="img/icons/fb_icon.png" class="social-logo" />
+                </a>
+                <a href="https://www.instagram.com/threewolvesmedia/">
+                    <img src="img/icons/inst_icon.png" class="social-logo" />
+                </a>
+            </div>
+            <div class="contacts">
+                <span class="contact-title">Esküvő</span>
+                <ul>
+                    <li class="contact-text">
+                        <a href="index.html#wedding-section">Csomag Információk</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="jegyes.html">Jegyespárfotózás galéria</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="eskuvo.html">Esküvő galéria</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <span class="contact-title">Család- és párfotózás</span>
+                <ul>
+                    <li class="contact-text">
+                        <a href="index.html#family-and-couple">Csomag Információk</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="csalad.html">Családfotózás galéria</a>
+                    </li>
+                    <!-- <li class="contact-text">
+                            <a href="">Párfotózás galéria</a>
+                        </li> -->
+                    <li class="contact-text">
+                        <a href="portre.html">Portréfotózás galéria</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="baba.html">Baba- és gyermekfotózás galéria</a>
+                    </li>
+                </ul>
+                <span class="contact-title">Divat és portréfotózás</span>
+                <ul>
+                    <li class="contact-text">
+                        <a href="index.html#fashion-and-portrait">Csomag Információk</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="divat.html">Divatfotózás galéria</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="portre.html">Portréfotózás galéria</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <span class="contact-title">Rendezvényfotózás</span>
+                <ul>
+                    <li class="contact-text">
+                        <a href="index.html">Csomag Információk</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="koncert.html">Koncert és fesztiválfotózás galéria</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="sport.html">Sportesemények galéria</a>
+                    </li>
+                </ul>
+                <span class="contact-title">Cégek részére</span>
+                <ul>
+                    <li class="contact-text">
+                        <a href="index.html#for-companies">Csomag Információk</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="termek.html">Termékfotózás galéria</a>
+                    </li>
+                    <li class="contact-text">
+                        <a href="reklam.html">Reklámfotózás galéria</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="legal-list">
+            <a class="legal-text" href="adatvedelem.html">
+                <span class="legal">Adatvédelem</span>
+            </a>
+            <a class="legal-text" href="impressum.html">
+                <span class="legal">Impresszum</span>
+            </a>
+        </div>
+    </section>
+    <center>
+        <p class="twm-text">™Three Wolves Media minden jog fentartva</p>
+    </center>
+    <script>initCsalad()</script>
+</body>
+
+</html>

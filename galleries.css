@@ -1,0 +1,186 @@
+.gallery-slider-container{
+    background: white;
+    width: 100%;
+    max-width: 1800px;
+    height: auto;
+    min-height: 300px;
+    border-radius: 5px 5px 5px 5px  ;
+    align-content: center;
+    position: relative;
+    display: block;
+    margin-bottom: 1%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    box-shadow: 10px 10px 8px #888888;
+    
+}
+
+.main-image-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+   margin-right: 10px;
+   margin-left: 10px;
+}
+
+.main-image{
+    width: auto;
+    max-width: 1800px;
+    height: auto;
+    max-height: 650px;
+    border: 3px solid #36393b;
+    border-radius: 12px 12px 12px 12px;
+    animation: fade 3s;
+}
+
+
+.control{
+    color: #212529;
+    font-size: 60px;
+    padding-top: auto;
+    padding-bottom: auto;
+    cursor: pointer;
+    align-self: center;
+}
+
+.gallery-images-container{
+    background: white;
+    width: 100%;
+    max-width: 1800px;
+    height: auto;
+    min-height: 300px;
+    border-radius: 15px 15px 0px 0px  ;
+    align-content: center;
+    position: relative;
+    display: block;
+    margin-bottom: 1%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.sub-images{
+    padding: 5px;
+    align-self: center;
+}
+
+.sub-image{
+    margin-right: 30px;
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    max-height: 150px;
+    border: 3px solid #36393b;
+    border-radius: 12px 12px 12px 12px;
+    
+}
+
+.thumbnail-container{
+   padding: 15px;
+}
+
+.thumbnail-img{
+    width: auto;
+    max-width: 450px;
+    height: auto;
+    max-height: 300px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(70%);
+    overflow: hidden;
+}
+
+.thumbnail-img:hover {
+    filter: brightness(100%);
+    transform: scale(1);
+    
+}
+
+
+ /* Fading animation */
+ .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    0% {opacity: 0; }
+    100%  {opacity: 1;}
+    
+  }
+  
+  @keyframes fade {
+    0% {opacity: 0; }
+    100%  {opacity: 1;}
+    
+  }
+
+
+  @media (max-width: 1024px){
+      .main-image{
+          max-width: 750px;
+          max-height: 450px;
+      }
+
+      .thumbnail-img{
+          max-width: 400px;
+          max-height: 260px;
+      }
+  }
+
+  @media (max-width: 850px){
+      .main-image{
+          max-width: 650px;
+          max-height: 420px;
+      }
+      .thumbnail-img{
+        max-width: 300px;
+        max-height: 200px;
+    }
+  }
+
+  @media (max-width:700px){
+      .main-image{
+          max-width: 450px;
+          max-height: 300px;
+      }
+
+      .sub-image{
+          max-height: 100px;
+      }
+
+      .thumbnail-img{
+        max-width: 250px;
+        max-height: 160px;
+    }
+  }
+
+  @media (max-width: 550px){
+      .main-image{
+          max-width: 250px;
+          max-height: 180px;
+      }
+
+      .sub-image{
+          max-height: 60px;
+          margin-right: 10px;
+      }
+
+      .thumbnail-img{
+        max-width: 200px;
+        max-height: 130px;
+    }
+  }
+
+  @media (max-width:425px){
+    .thumbnail-img{
+        max-width: 120px;
+        max-height: 80px;
+    }
+  }
