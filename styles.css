@@ -456,7 +456,9 @@ body{
 .compare-text{
     color:#646464;
     padding-bottom: 1%;
+    text-align: center !important;
 }
+
 .image-slider > div:before {
 	content: '';
 	display: block;
@@ -476,6 +478,10 @@ body{
 
 /*--------- Reviews ------------*/
 
+#reviews{
+    border-radius: 15px 15px 15px 15px  ;
+}
+
 .review-footer{
     display: flex;
     flex-direction: row-reverse;
@@ -488,12 +494,23 @@ body{
     bottom: 0;
 }
 
-.review-button{
-    padding: 1%;
-    background-color:black;
-    color: white;
-    float: right;
-    margin-left: auto;
+.review-btn{
+    background-color: #4F5359;
+    border: 0.1px solid black;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 7px;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    font-style: italic;
+    
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.review-btn:hover{
+    background: rgb(149, 152, 158);
+    border: 0.1px solid black;
 }
 
 .review-container {
@@ -563,6 +580,7 @@ body{
       z-index: 2;
       animation: show .2s;
       transform: scale(1);
+      margin-top: 60px;
   }
 
   @keyframes show{
@@ -769,6 +787,7 @@ body{
   .twm-text{
       font-size: 16px;
       color: #aaaaaa;
+      text-align: center;
   }
 
  
